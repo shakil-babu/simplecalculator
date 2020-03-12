@@ -1,0 +1,32 @@
+input{
+    color: dimgray;
+    width: 187px;
+    padding: 10px;
+    margin-top: 10%;
+
+}
+
+.otherside{
+    width: 500px;
+    height: 340px;
+    border: 3px solid rgba(255, 166, 0, 0.76);
+    background:url(images/bg-calculator.jpg) no-repeat;
+    background-size: cover;
+    margin:auto;
+}
+.overly{
+    width: 500px;
+    height: 335px;
+    background: #00000052;
+  
+}
+
+.container{
+    padding-top: 6%;
+}
+
+.calculator{
+    border-bottom: 2px solid orange;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 5px;
+}

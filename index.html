@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Tutorial</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="custom.css">
+
+</head>
+<body>
+
+
+
+<div class="container my-5">
+    <div class="otherside text-center">
+        
+<div class="overly img-thumbnail">
+    <h3 class="text-light mt-3 calculator">Simple Calculator</h3>
+    <input class=" " type="text" id="a" placeholder="First number"> <span class="text-light lead">And</span> 
+    <input class="" type="text" id="b" placeholder="Second number">
+    <br>
+    <h3 class="header mt-4 text-light"></h3>
+    <button id="buttonaa" class="mt-4 btn btn-success">Sum(+)</button>
+    <button id="button1" class="btn btn-danger mt-4">Sub(-)</button>
+    <button id="button2" class="mt-4 btn btn-info">Mul(*)</button>
+    <button id="button3" class="mt-4 btn btn-primary">Div(/)</button>
+    <button id="button4" class="mt-4 btn btn-secondary">Modulas(%)</button>
+   
+
+</div>
+    </div>
+</div>
+
+<script>
+    document.querySelector('#buttonaa').addEventListener('click', function(){
+        var a = document.querySelector('#a').value;
+        var b = document.querySelector('#b').value;
+
+        var result = parseFloat(a) + parseFloat(b);
+        document.querySelector('.header').innerHTML ="<font color ='white'> Sum is = </font>" + result;
+    });
+
+    document.querySelector('#button1').addEventListener('click', function(){
+        var a = document.querySelector('#a').value;
+        var b = document.querySelector('#b').value;
+
+        var result = parseFloat(a) - parseFloat(b);
+        document.querySelector('.header').innerHTML ="<font color ='white'> Substraction is = </font>" + result;
+    });
+
+    document.querySelector('#button2').addEventListener('click', function(){
+        var a = document.querySelector('#a').value;
+        var b = document.querySelector('#b').value;
+
+        var result = parseFloat(a) * parseFloat(b);
+        document.querySelector('.header').innerHTML ="<font color ='white'>Multiple is = </font>" + result;
+    });
+
+    document.querySelector('#button3').addEventListener('click', function(){
+        var a = document.querySelector('#a').value;
+        var b = document.querySelector('#b').value;
+
+        var result = parseFloat(a) / parseFloat(b);
+        document.querySelector('.header').innerHTML ="<font color ='white'> Divide is = </font>" + result;
+    });
+    document.querySelector('#button4').addEventListener('click', function(){
+        var a = document.querySelector('#a').value;
+        var b = document.querySelector('#b').value;
+
+        var result = parseFloat(a) % parseFloat(b);
+        document.querySelector('.header').innerHTML ="<font color ='white'> Modulas is = </font>" + result;
+    });
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- bootstrap jquery-slim.js here -->
+    <script src="js/jquery-slim.min.js"></script>
+
+    <!-- bootstrap popper.js  here -->
+    <script src="js/popper.min.js"></script>
+
+    <!-- bootstrap javascript.min.js here -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
